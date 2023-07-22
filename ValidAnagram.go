@@ -5,7 +5,7 @@ func isAnagram(s string, t string) bool {
         m[s[i]-'a']++
         m[t[i]-'a']--
     }
-    for _, v := range m {
+    for _, v := range m { //doubt for _ used here
         if v != 0 {
             return false
         }
